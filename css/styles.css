@@ -1,0 +1,84 @@
+/*reset*/
+@import "reset.css";
+
+/*variables*/
+@import "variables.css";
+
+/*components*/
+@import "components/header.css";
+@import "components/footer.css";
+
+/*screens*/
+@import "screens/main.css";
+@import "screens/story.css";
+@import "screens/ir.css";
+@import "screens/brand.css";
+
+/*font*/
+
+* {
+    font-family: "Pretendard", sans-serif;
+    line-height: 1.5;
+  }
+
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Pretendard", sans-serif;
+    line-height: 1.45;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    }
+  .bg {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+  section .bg img{
+    position:absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  section .bg div{
+    position:absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+  .wrap {
+    width: 1000px;
+  }
+  .bold {
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  h3{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 200;
+  }

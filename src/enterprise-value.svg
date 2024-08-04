@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="354.364" height="306" viewBox="0 0 354.364 306">
+  <g id="enterprise-value" transform="translate(-446.636 -1383)">
+    <text id="Enterprise_Value" data-name="Enterprise Value" transform="translate(509 1415)" fill="#00205e" font-size="34" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="0" y="0">Enterprise Value</tspan></text>
+    <text id="_100_" data-name="100%" transform="translate(470 1636)" fill="#00205e" font-size="150" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">100</tspan><tspan y="0" font-size="100">%</tspan></text>
+    <g id="Icon_feather-trending-up" data-name="Icon feather-trending-up" transform="translate(451.5 1474)" opacity="0.296">
+      <path id="패스_42" data-name="패스 42" d="M7.864,197.364-4.864,184.636l113.75-113.75a9,9,0,0,1,12.728,0l69.469,69.469L328.8,2.636l12.728,12.728L197.447,159.447a9,9,0,0,1-12.728,0L115.25,89.978Z" transform="translate(0)" fill="#00205e"/>
+      <path id="패스_43" data-name="패스 43" d="M125.5,100h-18V18h-82V0h91a9,9,0,0,1,9,9Z" transform="translate(218.667)" fill="#00205e"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 243, 243,0);
+    z-index: 3;
+    overflow: hidden;
+    color: white;
+}
+.header-inner {
+    width: 100vw;
+    padding: 0px 64px 0px 64px;
+    box-sizing : border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Pretendard";
+    height: 100px;
+    z-index: 4;
+    /* background-color: white;*/
+}
+.header-logo {
+    width: 150px;
+}
+.header-gnb{
+    display: flex;
+    height: 100px;
+}
+.header-1depth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.header-sub {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.header-dot{
+    width: 7px;
+    height: 7px;
+    background-color: #073798;
+    border-radius: 50%;
+    position: absolute;
+    top: 68px;
+    left: 48%;
+    opacity: 0;
+}
+
+.header-1depth > a{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 40px 50px;
+    display: flex;
+    align-items: center;
+}
+.header-sub a {
+    margin-bottom: 16px;
+}
+.header-contact {
+    margin-left: 70px;
+}
+
+
+/* ---------  mouse over --------- */
+header.over {
+    transition: height 0.7s ease-in-out ;
+}
+
+.header-1depth a:hover .header-dot{
+    opacity: 1;
+}
+.header-1depth a:hover{
+    color: #073798;
+    transition: all 0.5 ease-in-out;
+}

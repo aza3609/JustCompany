@@ -1,0 +1,158 @@
+body {
+}
+.main section {
+    height: 100vh;
+}
+.main-top {
+    color: white;
+}
+.main-top>img {
+width: 65px;
+position: absolute;
+bottom: 8%;
+right: 48.5%;
+}
+.main-brand {
+    background-color: #EFEFEF; 
+}
+.main-brand h3{
+    margin-bottom: 18px;
+}
+.main-brand a {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.main-top h3{
+    font-size: 54px;
+    font-weight: 200;
+}
+    
+.main-brand__items {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.main-brand__items li {
+width: 32%;
+
+}
+.main-brand__items li div{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.main-brand__items li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: scale(100%);
+    transition: all 1s ease-in-out;
+}
+.main-brand__items li span {
+    font-size: 26px;
+}
+.main-media {
+    background-color: #00215E;
+    color: white;
+    position: relative;
+}
+.main-media__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 300px;
+}
+.main-media__items a {
+    height: 100%;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+.main-media__items div{
+border-right: 1px rgba(255, 255, 255, 0.476) solid;
+height: 100%;
+margin-right: 20px;
+}
+.main-media__items a:nth-child(3) {
+    border-right: none; 
+}
+.main-media__items a i {
+    margin-left: 12px;
+}
+.main-media img {
+    width: 1000px;
+    height: 420px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -140px;
+    z-index: 1;
+    transition: all 1.2s ease-in-out;
+}
+.main-contact {
+    background-color: #121212;
+    color: white;
+     
+}
+.main-contact .wrap {
+    margin-top: 60px;
+}
+.main-contact img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.main-contact a {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+/*-------- 효과 --------*/
+.main-top .bg {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.main-top .bg img{
+    height: 100vh;
+    width: 100vw;
+    animation-name: bg-img;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    transition: ease-in-out;
+    object-fit: cover;
+}
+.main-brand a:hover{
+    transform: translateY(-8px);
+    transition: 0.5s ease-in-out;
+}
+.main-brand__items li:hover img {
+transform: scale(110%);
+}
+@keyframes bg-img {
+    from{
+        transform: scale(120%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+
+.main-media__items a:hover{
+    transform: translateY(-8px);
+    transition: 0.5s ease-in-out;
+}
+.main-contact a:hover{
+    transform: translateY(-8px);
+    transition: 0.5s ease-in-out;
+}
+
+.main-media.show img{
+    width: 100vw;
+    transition: all 1.2s ease-in-out;
+}

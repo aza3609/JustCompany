@@ -1,0 +1,104 @@
+.brand {
+    color: white;
+}
+.brand section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(16, 16, 16);
+    justify-items: center;
+}
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.brand-text img {
+    width: 200px;
+}
+.brand-text p {
+    margin: 30px 0px;
+}
+.brand-text a {
+    display: flex;
+    align-items: center;
+}
+.brand-img {
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+    overflow: hidden;
+}
+.brand-img img{
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+    z-index: -3;
+    overflow: hidden;
+
+}
+.brand-img div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(16, 16, 16), rgba(16, 16, 16, 0.191));
+    z-index: 0;
+}
+.brand section:nth-child(2n+1) .brand-img {
+    order: -1;
+}
+.brand section:nth-child(2n+1) .brand-img div{
+    background: linear-gradient(270deg, rgb(16, 16, 16), rgba(16, 16, 16, 0.247));
+}
+
+
+/* ---- 모션효과  -----*/
+.brand--푸줏간.view-spy .brand-text, .brand--김치찜.view-spy .brand-text{
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+    animation-name: slidein-left;
+}
+.brand--양지경성.view-spy .brand-text{
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+    animation-name: slidein-right;  
+}
+@keyframes slidein-right {
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
+  }
+  @keyframes slidein-left {
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
+  }
+
+.show .brand-img img{
+    animation-name: bg-img;
+    animation-duration: 8s;
+}
+  @keyframes bg-img {
+    from{
+        transform: scale(110%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+.brand-text a:hover {
+    transform: translateY(-8px);
+    transition: 0.5s ease-in-out;
+}

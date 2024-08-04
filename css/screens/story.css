@@ -1,0 +1,121 @@
+.story {
+    color: white;
+}
+.story-top, .story-mission1, .story-mission2, .story-mission3 {
+    height: 100vh;
+}
+.story section .wrap {
+text-align: center;
+}
+.story-top .bg div{
+    background: transparent linear-gradient(0deg, #000000 0%, #00000036 100%) 0% 0% no-repeat padding-box;
+}
+.story-mission1 .bg div{
+    background: transparent linear-gradient(180deg, #000000 0%, #000000 20%, #00000036 100%) 0% 0% no-repeat padding-box;
+}
+.story-mission2 .bg div {
+    background-color: #000000a1;
+}
+.story-mission3 .bg div{
+    background: transparent linear-gradient(0deg, #000000 0%, #00000036 100%) 0% 0% no-repeat padding-box;
+}
+.story-top>img {
+    width: 65px;
+    position: absolute;
+    bottom: 8%;
+    right: 48.5%;
+    }
+.story-top__logo {
+    width: 280px;
+    margin: 180px 0px 60px 0px;
+}
+.story-history {
+    background-color: #000000;
+padding: 180px 0px;
+}
+.story-history__graphic {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+}
+.story-history__center {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+}
+.story-history__content{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+}
+.story-history__text {
+    padding: 0px 60px;
+    width: 49.2%;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+.story-history__year {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.story-history__dot {
+    background-color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-top: 16px;
+}
+.story-history__content:nth-child(2n+1) .story-history__dot{
+    order: -1;
+}
+.story-history__content:nth-child(2n+1) {
+    text-align: left;
+    justify-content: flex-end;
+}
+.story-history__content:nth-child(2n) {
+    justify-content: flex-start;
+    text-align: right;
+}
+
+/* ---- 모션효과  -----*/
+
+.story-top .wrap{
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-name: slidein;
+}
+.story-top>img {
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-name: slidein;
+}
+  @keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
+  }
+
+.show .wrap{
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-name: slidein;
+}
+.story-history__title.show h2, .story-history__title.show h3, .story-history__title.show p{
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-name: slidein;
+}
+.story-history__content.show div{
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-name: slidein;
+}
